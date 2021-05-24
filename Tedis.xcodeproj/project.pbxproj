@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED04BFDF264112CE00A637CA /* ConnectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED04BFDE264112CE00A637CA /* ConnectService.swift */; };
+		ED04BFE526411B2200A637CA /* RedisTypes in Frameworks */ = {isa = PBXBuildFile; productRef = ED04BFE426411B2200A637CA /* RedisTypes */; };
+		ED04BFE726411B2200A637CA /* RediStack in Frameworks */ = {isa = PBXBuildFile; productRef = ED04BFE626411B2200A637CA /* RediStack */; };
+		ED23345C263D0A3600829FBA /* TedisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23345B263D0A3600829FBA /* TedisApp.swift */; };
+		ED23345E263D0A3600829FBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23345D263D0A3600829FBA /* ContentView.swift */; };
+		ED233460263D0A3600829FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED23345F263D0A3600829FBA /* Assets.xcassets */; };
+		ED233463263D0A3600829FBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED233462263D0A3600829FBA /* Preview Assets.xcassets */; };
+		ED23346F263D0A3700829FBA /* TedisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23346E263D0A3700829FBA /* TedisTests.swift */; };
+		ED23347A263D0A3700829FBA /* TedisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED233479263D0A3700829FBA /* TedisUITests.swift */; };
+		ED23348A263D19E500829FBA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED233489263D19E500829FBA /* Constants.swift */; };
+		ED23348D263D27CB00829FBA /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23348C263D27CB00829FBA /* SideMenu.swift */; };
+		ED23348F263D27DA00829FBA /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23348E263D27DA00829FBA /* Window.swift */; };
+		ED36129A263D8D75000C1DAE /* SideToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED361299263D8D75000C1DAE /* SideToolBar.swift */; };
+		ED65BEDE264666CC0079D01F /* RouterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65BEDD264666CC0079D01F /* RouterModule.swift */; };
+		ED65BEE0264669CE0079D01F /* NewRedisWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65BEDF264669CE0079D01F /* NewRedisWindow.swift */; };
+		ED65BEE326466ABA0079D01F /* KeyValueWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65BEE226466ABA0079D01F /* KeyValueWindow.swift */; };
+		ED65BEE526466AD50079D01F /* ValueDetailWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65BEE426466AD50079D01F /* ValueDetailWindow.swift */; };
+		ED65BEE7264670A30079D01F /* NewRedisVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65BEE6264670A30079D01F /* NewRedisVM.swift */; };
+		ED65BEEA264673260079D01F /* RedisParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED65BEE9264673260079D01F /* RedisParam.swift */; };
+		ED7AB09D264BE7090066ACFD /* SideMenuVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7AB09C264BE7090066ACFD /* SideMenuVM.swift */; };
+		ED7E41B82643AD4600184128 /* MainToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7E41B72643AD4600184128 /* MainToolBar.swift */; };
+		EDE18E052651035300D35F7E /* RedisModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE18E042651035300D35F7E /* RedisModule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED23346B263D0A3700829FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED233450263D0A3600829FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED233457263D0A3600829FBA;
+			remoteInfo = Tedis;
+		};
+		ED233476263D0A3700829FBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED233450263D0A3600829FBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED233457263D0A3600829FBA;
+			remoteInfo = Tedis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED04BFDE264112CE00A637CA /* ConnectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectService.swift; sourceTree = "<group>"; };
+		ED233458263D0A3600829FBA /* Tedis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tedis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED23345B263D0A3600829FBA /* TedisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedisApp.swift; sourceTree = "<group>"; };
+		ED23345D263D0A3600829FBA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED23345F263D0A3600829FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED233462263D0A3600829FBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED233464263D0A3600829FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED233465263D0A3600829FBA /* Tedis.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tedis.entitlements; sourceTree = "<group>"; };
+		ED23346A263D0A3700829FBA /* TedisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TedisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED23346E263D0A3700829FBA /* TedisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedisTests.swift; sourceTree = "<group>"; };
+		ED233470263D0A3700829FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED233475263D0A3700829FBA /* TedisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TedisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED233479263D0A3700829FBA /* TedisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TedisUITests.swift; sourceTree = "<group>"; };
+		ED23347B263D0A3700829FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED233489263D19E500829FBA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED23348C263D27CB00829FBA /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		ED23348E263D27DA00829FBA /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		ED361299263D8D75000C1DAE /* SideToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideToolBar.swift; sourceTree = "<group>"; };
+		ED65BEDD264666CC0079D01F /* RouterModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterModule.swift; sourceTree = "<group>"; };
+		ED65BEDF264669CE0079D01F /* NewRedisWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRedisWindow.swift; sourceTree = "<group>"; };
+		ED65BEE226466ABA0079D01F /* KeyValueWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueWindow.swift; sourceTree = "<group>"; };
+		ED65BEE426466AD50079D01F /* ValueDetailWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueDetailWindow.swift; sourceTree = "<group>"; };
+		ED65BEE6264670A30079D01F /* NewRedisVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRedisVM.swift; sourceTree = "<group>"; };
+		ED65BEE9264673260079D01F /* RedisParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisParam.swift; sourceTree = "<group>"; };
+		ED7AB09C264BE7090066ACFD /* SideMenuVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVM.swift; sourceTree = "<group>"; };
+		ED7E41B72643AD4600184128 /* MainToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainToolBar.swift; sourceTree = "<group>"; };
+		EDE18E042651035300D35F7E /* RedisModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisModule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED233455263D0A3600829FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED04BFE526411B2200A637CA /* RedisTypes in Frameworks */,
+				ED04BFE726411B2200A637CA /* RediStack in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED233467263D0A3700829FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED233472263D0A3700829FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED04BFE0264116D800A637CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ED65BEE6264670A30079D01F /* NewRedisVM.swift */,
+				ED7AB09C264BE7090066ACFD /* SideMenuVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED23344F263D0A3600829FBA = {
+			isa = PBXGroup;
+			children = (
+				ED23345A263D0A3600829FBA /* Tedis */,
+				ED23346D263D0A3700829FBA /* TedisTests */,
+				ED233478263D0A3700829FBA /* TedisUITests */,
+				ED233459263D0A3600829FBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED233459263D0A3600829FBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED233458263D0A3600829FBA /* Tedis.app */,
+				ED23346A263D0A3700829FBA /* TedisTests.xctest */,
+				ED233475263D0A3700829FBA /* TedisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED23345A263D0A3600829FBA /* Tedis */ = {
+			isa = PBXGroup;
+			children = (
+				EDE18E03265102F900D35F7E /* Module */,
+				ED65BEE8264671180079D01F /* Model */,
+				ED04BFE0264116D800A637CA /* ViewModel */,
+				ED23348B263D215A00829FBA /* Service */,
+				ED233487263D19B800829FBA /* View */,
+				ED23345B263D0A3600829FBA /* TedisApp.swift */,
+				ED23345D263D0A3600829FBA /* ContentView.swift */,
+				ED23345F263D0A3600829FBA /* Assets.xcassets */,
+				ED233464263D0A3600829FBA /* Info.plist */,
+				ED233465263D0A3600829FBA /* Tedis.entitlements */,
+				ED233461263D0A3600829FBA /* Preview Content */,
+			);
+			path = Tedis;
+			sourceTree = "<group>";
+		};
+		ED233461263D0A3600829FBA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED233462263D0A3600829FBA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED23346D263D0A3700829FBA /* TedisTests */ = {
+			isa = PBXGroup;
+			children = (
+				ED23346E263D0A3700829FBA /* TedisTests.swift */,
+				ED233470263D0A3700829FBA /* Info.plist */,
+			);
+			path = TedisTests;
+			sourceTree = "<group>";
+		};
+		ED233478263D0A3700829FBA /* TedisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED233479263D0A3700829FBA /* TedisUITests.swift */,
+				ED23347B263D0A3700829FBA /* Info.plist */,
+			);
+			path = TedisUITests;
+			sourceTree = "<group>";
+		};
+		ED233487263D19B800829FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED65BEE126466A8C0079D01F /* Windows */,
+				ED233489263D19E500829FBA /* Constants.swift */,
+				ED23348C263D27CB00829FBA /* SideMenu.swift */,
+				ED23348E263D27DA00829FBA /* Window.swift */,
+				ED361299263D8D75000C1DAE /* SideToolBar.swift */,
+				ED7E41B72643AD4600184128 /* MainToolBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED23348B263D215A00829FBA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ED04BFDE264112CE00A637CA /* ConnectService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		ED65BEE126466A8C0079D01F /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				ED65BEDF264669CE0079D01F /* NewRedisWindow.swift */,
+				ED65BEE226466ABA0079D01F /* KeyValueWindow.swift */,
+				ED65BEE426466AD50079D01F /* ValueDetailWindow.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		ED65BEE8264671180079D01F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ED65BEE9264673260079D01F /* RedisParam.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDE18E03265102F900D35F7E /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				ED65BEDD264666CC0079D01F /* RouterModule.swift */,
+				EDE18E042651035300D35F7E /* RedisModule.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED233457263D0A3600829FBA /* Tedis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED23347E263D0A3700829FBA /* Build configuration list for PBXNativeTarget "Tedis" */;
+			buildPhases = (
+				ED233454263D0A3600829FBA /* Sources */,
+				ED233455263D0A3600829FBA /* Frameworks */,
+				ED233456263D0A3600829FBA /* Resources */,
+				ED4B06CB265B61BA0071973B /* Run Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tedis;
+			packageProductDependencies = (
+				ED04BFE426411B2200A637CA /* RedisTypes */,
+				ED04BFE626411B2200A637CA /* RediStack */,
+			);
+			productName = Tedis;
+			productReference = ED233458263D0A3600829FBA /* Tedis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED233469263D0A3700829FBA /* TedisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED233481263D0A3700829FBA /* Build configuration list for PBXNativeTarget "TedisTests" */;
+			buildPhases = (
+				ED233466263D0A3700829FBA /* Sources */,
+				ED233467263D0A3700829FBA /* Frameworks */,
+				ED233468263D0A3700829FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED23346C263D0A3700829FBA /* PBXTargetDependency */,
+			);
+			name = TedisTests;
+			productName = TedisTests;
+			productReference = ED23346A263D0A3700829FBA /* TedisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED233474263D0A3700829FBA /* TedisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED233484263D0A3700829FBA /* Build configuration list for PBXNativeTarget "TedisUITests" */;
+			buildPhases = (
+				ED233471263D0A3700829FBA /* Sources */,
+				ED233472263D0A3700829FBA /* Frameworks */,
+				ED233473263D0A3700829FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED233477263D0A3700829FBA /* PBXTargetDependency */,
+			);
+			name = TedisUITests;
+			productName = TedisUITests;
+			productReference = ED233475263D0A3700829FBA /* TedisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED233450263D0A3600829FBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					ED233457263D0A3600829FBA = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					ED233469263D0A3700829FBA = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = ED233457263D0A3600829FBA;
+					};
+					ED233474263D0A3700829FBA = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = ED233457263D0A3600829FBA;
+					};
+				};
+			};
+			buildConfigurationList = ED233453263D0A3600829FBA /* Build configuration list for PBXProject "Tedis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED23344F263D0A3600829FBA;
+			packageReferences = (
+				ED04BFE326411B2200A637CA /* XCRemoteSwiftPackageReference "RediStack" */,
+			);
+			productRefGroup = ED233459263D0A3600829FBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED233457263D0A3600829FBA /* Tedis */,
+				ED233469263D0A3700829FBA /* TedisTests */,
+				ED233474263D0A3700829FBA /* TedisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED233456263D0A3600829FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED233463263D0A3600829FBA /* Preview Assets.xcassets in Resources */,
+				ED233460263D0A3600829FBA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED233468263D0A3700829FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED233473263D0A3700829FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED4B06CB265B61BA0071973B /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, warning: SwiftLint not installed, download form https://github.com/realm/SwiftLint.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED233454263D0A3600829FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED23345E263D0A3600829FBA /* ContentView.swift in Sources */,
+				ED65BEE0264669CE0079D01F /* NewRedisWindow.swift in Sources */,
+				ED23348F263D27DA00829FBA /* Window.swift in Sources */,
+				ED7E41B82643AD4600184128 /* MainToolBar.swift in Sources */,
+				ED23345C263D0A3600829FBA /* TedisApp.swift in Sources */,
+				ED65BEE7264670A30079D01F /* NewRedisVM.swift in Sources */,
+				ED65BEE326466ABA0079D01F /* KeyValueWindow.swift in Sources */,
+				ED36129A263D8D75000C1DAE /* SideToolBar.swift in Sources */,
+				EDE18E052651035300D35F7E /* RedisModule.swift in Sources */,
+				ED7AB09D264BE7090066ACFD /* SideMenuVM.swift in Sources */,
+				ED65BEEA264673260079D01F /* RedisParam.swift in Sources */,
+				ED65BEE526466AD50079D01F /* ValueDetailWindow.swift in Sources */,
+				ED65BEDE264666CC0079D01F /* RouterModule.swift in Sources */,
+				ED04BFDF264112CE00A637CA /* ConnectService.swift in Sources */,
+				ED23348D263D27CB00829FBA /* SideMenu.swift in Sources */,
+				ED23348A263D19E500829FBA /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED233466263D0A3700829FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED23346F263D0A3700829FBA /* TedisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED233471263D0A3700829FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED23347A263D0A3700829FBA /* TedisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED23346C263D0A3700829FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED233457263D0A3600829FBA /* Tedis */;
+			targetProxy = ED23346B263D0A3700829FBA /* PBXContainerItemProxy */;
+		};
+		ED233477263D0A3700829FBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED233457263D0A3600829FBA /* Tedis */;
+			targetProxy = ED233476263D0A3700829FBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ED23347C263D0A3700829FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED23347D263D0A3700829FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		ED23347F263D0A3700829FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tedis/Tedis.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Tedis/Preview Content\"";
+				DEVELOPMENT_TEAM = HNDK78NUV5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tedis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jorakuten1995-gmail.com.Tedis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ED233480263D0A3700829FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Tedis/Tedis.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Tedis/Preview Content\"";
+				DEVELOPMENT_TEAM = HNDK78NUV5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tedis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jorakuten1995-gmail.com.Tedis";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ED233482263D0A3700829FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HNDK78NUV5;
+				INFOPLIST_FILE = TedisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jorakuten1995-gmail.com.TedisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tedis.app/Contents/MacOS/Tedis";
+			};
+			name = Debug;
+		};
+		ED233483263D0A3700829FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HNDK78NUV5;
+				INFOPLIST_FILE = TedisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jorakuten1995-gmail.com.TedisTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tedis.app/Contents/MacOS/Tedis";
+			};
+			name = Release;
+		};
+		ED233485263D0A3700829FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HNDK78NUV5;
+				INFOPLIST_FILE = TedisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jorakuten1995-gmail.com.TedisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Tedis;
+			};
+			name = Debug;
+		};
+		ED233486263D0A3700829FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HNDK78NUV5;
+				INFOPLIST_FILE = TedisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jorakuten1995-gmail.com.TedisUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Tedis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED233453263D0A3600829FBA /* Build configuration list for PBXProject "Tedis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED23347C263D0A3700829FBA /* Debug */,
+				ED23347D263D0A3700829FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED23347E263D0A3700829FBA /* Build configuration list for PBXNativeTarget "Tedis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED23347F263D0A3700829FBA /* Debug */,
+				ED233480263D0A3700829FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED233481263D0A3700829FBA /* Build configuration list for PBXNativeTarget "TedisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED233482263D0A3700829FBA /* Debug */,
+				ED233483263D0A3700829FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED233484263D0A3700829FBA /* Build configuration list for PBXNativeTarget "TedisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED233485263D0A3700829FBA /* Debug */,
+				ED233486263D0A3700829FBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED04BFE326411B2200A637CA /* XCRemoteSwiftPackageReference "RediStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitlab.com/mordil/RediStack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED04BFE426411B2200A637CA /* RedisTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED04BFE326411B2200A637CA /* XCRemoteSwiftPackageReference "RediStack" */;
+			productName = RedisTypes;
+		};
+		ED04BFE626411B2200A637CA /* RediStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED04BFE326411B2200A637CA /* XCRemoteSwiftPackageReference "RediStack" */;
+			productName = RediStack;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ED233450263D0A3600829FBA /* Project object */;
+}
